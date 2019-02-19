@@ -14,18 +14,15 @@ int main(int argc, char** argv)
 {
     int a , b ;
     printf("  Welcome \n");
-   
-    printf("\n Nhập 2 số : \n ");
+    printf("\n Nhập 2 số a và b: \n ");
     scanf("%d %d",&a,&b);
     if(a>b)
         printf("số %d lớn hơn số %d \n",a,b);
-    else
-        if(a<b)
-            printf("số %d nhỏ hơn %d \n",a,b);
-        else{
-            printf("số a bằng số b \n");
-        }
-   
+    else if(a<b)
+        printf("số %d nhỏ hơn %d \n",a,b);
+    else{
+        printf("số a bằng số b \n");
+    }
     return (EXIT_SUCCESS);
 }
-     getch();
+     
